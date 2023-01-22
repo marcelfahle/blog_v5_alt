@@ -21,13 +21,13 @@
   :root {
     --color-gray-20: #e0e0e0;
     --color-gray-50: #C0C0C0;
-    --color-gray-90: #dad8d8;
+    --color-gray-90: #EAECF0;
 
     /* --text-color is assigned to --color-gray-_ above */
     --text-color-link: #1493fb;
     --text-color-link-visited: #a6a6f8;
 
-    --background-color: #15202b;
+    --background-color: #1E1E1E;
   }
 }
 
@@ -56,7 +56,24 @@ img {
 }
 p,
 .tmpl-post li {
-  line-height: 1.45;
+  /* line-height: 1.45; */
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 5rem;
+}
+
+.tmpl-post {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.language-shell {
 }
 
 a[href] {
@@ -109,7 +126,9 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: .5em 0;
+  padding-left: 1rem !important;
+  margin-left: -4rem !important;
+  margin-right: -4rem !important;
   background-color: #f6f6f6;
 }
 code {
